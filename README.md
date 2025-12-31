@@ -15,7 +15,7 @@ The pipeline consists of three main stages:
 ├── processed_data/          # Generated training data (quadrants)
 ├── train/                   # Raw training images
 ├── test/                    # Test images for inference
-├── Connect.py               # Main inference script (generates submission.csv)
+├── inference.py               # Main inference script (generates submission.csv)
 ├── preprocess_data.py       # Splits images and generates labeled dataset
 ├── train.py                 # Trains the ResNet18 model
 ├── train_bboxes.csv         # Bounding box annotations
@@ -48,7 +48,7 @@ python train.py
 ### 3. Inference
 Run the model on the `test/` directory to generate the submission file.
 ```bash
-python Convert.py
+python inference.py
 ```
 *Output: Generates `submission_plainuj.csv` with the count of parts per image.*
 
