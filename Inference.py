@@ -11,7 +11,7 @@ from tqdm import tqdm
 # =====================
 TEST_DIR = "test"                         # test images folder
 MODEL_PATH = "models/resnet18_scratch_100.pth"
-OUTPUT_CSV = "submission_plainuj.csv"
+OUTPUT_CSV = "submission.csv"
 
 IMG_SIZE = 224
 DEVICE = "cuda" if torch.cuda.is_available() else "cpu"
